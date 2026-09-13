@@ -128,33 +128,16 @@ git commit -m "Entrega 2: prototipo funcional Nexo Diario (HTML, CSS, JS)"
 git branch -M main
 ```
 
-### 3. Crear el repositorio remoto en GitHub
 
-1. Entra a <https://github.com/new>.
-2. Repository name: `nexo-diario` (o el que prefieras).
-3. Deja el repo **público** para que el tutor y los pares puedan revisarlo.
-4. **No** marques "Add README" ni "Add .gitignore" (ya vienen en el proyecto).
-5. Pulsa **Create repository**.
 
-### 4. Conectar y subir
-
-GitHub te muestra dos URLs (HTTPS o SSH). Con HTTPS es lo más simple:
-
-```bash
-git remote add origin https://github.com/<TU-USUARIO>/nexo-diario.git
-git push -u origin main
-```
-
-Si es la primera vez, GitHub te pedirá autenticación. Recomendado usar un **Personal Access Token** (Settings → Developer settings → Personal access tokens → *Tokens (classic)* → Generate new token con scope `repo`).
-
-### 5. Desplegar con GitHub Pages (gratis)
+### 4. Desplegar con GitHub Pages (gratis)
 
 1. En el repo entra en **Settings → Pages**.
 2. En *Source* elige **Deploy from a branch**.
 3. Selecciona la rama `main` y la carpeta `/ (root)`. Guarda.
 4. En un par de minutos, GitHub Pages te dará la URL, del tipo `https://<TU-USUARIO>.github.io/nexo-diario/`.
 
-### 6. Actualizar cambios más adelante
+### 5. Actualizar cambios más adelante
 
 ```bash
 git add .
@@ -162,7 +145,7 @@ git commit -m "Descripción breve del cambio"
 git push
 ```
 
-### 7. (Opcional) Desplegar en Netlify o Vercel
+### 6. (Opcional) Desplegar en Netlify o Vercel
 
 Ambos permiten conectar el repositorio y desplegar automáticamente en cada `push`:
 
