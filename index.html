@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexo Diario — Inicio</title>
+  <meta name="description" content="Nexo Diario: historias que explican el mundo que compartimos. Noticias claras y cercanas sobre educación, tecnología, turismo y comercio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / navegación -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="Nexo Diario, inicio">
+        <span class="brand-logo">N</span>
+        <span>Nexo Diario</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="admin.html">Administración</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Tu ventana al presente</div>
+          <h1>Historias que explican el mundo que compartimos.</h1>
+          <p>Noticias claras y cercanas sobre educación, tecnología, turismo y comercio.</p>
+          <a href="noticias.html" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            Explorar noticias
+          </a>
+        </div>
+        <div class="hero-art">
+          <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=70" alt="Portada editorial de Nexo Diario">
+        </div>
+      </section>
+
+      <!-- Noticias destacadas -->
+      <section aria-labelledby="featured-title" style="margin-top: 32px;">
+        <div class="section-head">
+          <div>
+            <h2 id="featured-title" class="section-title">Noticias destacadas</h2>
+            <p class="section-sub">Una selección para entender lo que está pasando.</p>
+          </div>
+          <a href="noticias.html" class="btn btn-outline">Ver todas</a>
+        </div>
+        <div id="featured-grid" class="cards-grid"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand-lite">Nexo Diario</div>
+      <div class="cats">
+        <span>Educación</span><span>Tecnología</span><span>Turismo</span><span>Comercio</span>
+      </div>
+      <div>© 2026 Información que conecta</div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

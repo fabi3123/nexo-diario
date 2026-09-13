@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexo Diario — Administración</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand"><span class="brand-logo">N</span><span>Nexo Diario</span></a>
+      <button type="button" class="nav-toggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="favoritos.html">Favoritos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="admin.html">Administración</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <div class="section-head">
+        <div>
+          <h1 class="section-title">Administrar noticias</h1>
+          <p class="section-sub">Crea contenido y gestiona las publicaciones existentes.</p>
+        </div>
+        <div class="badge-count badge-success"><span class="dot"></span><span id="admin-counter">0 publicadas</span></div>
+      </div>
+
+      <div class="admin-grid">
+        <!-- Formulario para crear -->
+        <div class="admin-form-card">
+          <h2>Crear nueva noticia</h2>
+          <form id="admin-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="a-titulo">Título <span class="req">*</span></label>
+              <input class="form-control" type="text" id="a-titulo" name="titulo" placeholder="Escribe un título claro">
+              <div class="form-error" data-error-for="titulo"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="a-categoria">Categoría <span class="req">*</span></label>
+              <select class="form-control" id="a-categoria" name="categoria">
+                <option value="">Selecciona</option>
+                <option>Educación</option>
+                <option>Tecnología</option>
+                <option>Turismo</option>
+                <option>Comercio</option>
+              </select>
+              <div class="form-error" data-error-for="categoria"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="a-imagen">URL de imagen <span class="req">*</span></label>
+              <input class="form-control" type="url" id="a-imagen" name="imagen" placeholder="https://...">
+              <div class="form-error" data-error-for="imagen"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="a-resumen">Descripción breve <span class="req">*</span></label>
+              <textarea class="form-control" id="a-resumen" name="resumen" rows="2" placeholder="Resume la noticia en pocas líneas"></textarea>
+              <div class="form-error" data-error-for="resumen"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="a-contenido">Contenido <span class="req">*</span></label>
+              <textarea class="form-control" id="a-contenido" name="contenido" rows="4" placeholder="Desarrolla la noticia... (separa párrafos con una línea en blanco)"></textarea>
+              <div class="form-error" data-error-for="contenido"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+              Publicar noticia
+            </button>
+          </form>
+        </div>
+
+        <!-- Lista de existentes -->
+        <div class="admin-list">
+          <h2>Artículos existentes</h2>
+          <div id="admin-list"></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand-lite">Nexo Diario</div>
+      <div class="cats"><span>Educación</span><span>Tecnología</span><span>Turismo</span><span>Comercio</span></div>
+      <div>© 2026 Información que conecta</div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
