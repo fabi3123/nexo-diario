@@ -1,0 +1,23 @@
+<div class="section-head">
+  <div>
+    <h1 class="section-title">Tus favoritos</h1>
+    <p class="section-sub">Artículos guardados para volver cuando quieras.</p>
+  </div>
+  <div class="badge-count">
+    <span class="dot"></span><span>{{ contador() }}</span>
+  </div>
+</div>
+
+<div class="favorites-grid">
+  @for (noticia of guardadas(); track noticia.id) {
+    <app-noticia-card [noticia]="noticia" [mostrarRemover]="true" (remover)="quitar($event)" />
+  } @empty {
+    <app-estado-vacio
+      style="grid-column: 1 / -1"
+      titulo="Aún no has guardado favoritos"
+      mensaje="Explora las noticias y guarda las que quieras leer después."
+    >
+      <a class="btn btn-primary" routerLink="/noticias">Explorar noticias</a>
+    </app-estado-vacio>
+  }
+</div>

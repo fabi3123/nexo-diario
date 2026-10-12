@@ -1,0 +1,23 @@
+<article class="card">
+  <a
+    class="card-media"
+    [routerLink]="['/noticias', noticia().id]"
+    [attr.aria-label]="'Ver detalle de ' + noticia().title"
+  >
+    <img [src]="noticia().image" [alt]="noticia().title" loading="lazy" />
+  </a>
+  <div class="card-body">
+    <span class="card-category">{{ noticia().category }}</span>
+    <h3 class="card-title">{{ noticia().title }}</h3>
+    <p class="card-summary">{{ noticia().summary }}</p>
+    <div class="card-actions">
+      @if (mostrarRemover()) {
+        <button type="button" class="btn btn-danger" (click)="remover.emit(noticia().id)">
+          Remover
+        </button>
+      } @else {
+        <a class="btn btn-outline" [routerLink]="['/noticias', noticia().id]">Ver más</a>
+      }
+    </div>
+  </div>
+</article>

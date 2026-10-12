@@ -1,0 +1,80 @@
+[
+  {
+    "id": "n-001",
+    "category": "Educación",
+    "title": "Aulas que inspiran: aprender más allá de las pantallas",
+    "summary": "Nuevos modelos pedagógicos combinan creatividad, comunidad y herramientas digitales.",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70",
+    "date": "2026-09-12",
+    "lead": "Docentes y estudiantes están rediseñando la experiencia educativa con espacios flexibles, proyectos reales y tecnología usada con propósito.",
+    "body": [
+      "La transformación educativa no depende únicamente de incorporar dispositivos. En distintos centros, las clases comienzan con una pregunta concreta y avanzan mediante investigación, conversación y trabajo colaborativo.",
+      "Las herramientas digitales ayudan a documentar procesos, conectar expertos y ofrecer retroalimentación oportuna. El verdadero cambio aparece cuando cada recurso responde a una necesidad pedagógica clara."
+    ]
+  },
+  {
+    "id": "n-002",
+    "category": "Tecnología",
+    "title": "La inteligencia artificial llega a las pequeñas empresas",
+    "summary": "Soluciones accesibles están transformando tareas cotidianas y decisiones de negocio.",
+    "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1200&q=70",
+    "date": "2026-09-10",
+    "lead": "Herramientas antes exclusivas de grandes corporaciones ya son asequibles para negocios pequeños que buscan escalar sin perder cercanía.",
+    "body": [
+      "Automatizaciones sencillas permiten liberar tiempo del equipo en tareas repetitivas: respuesta a clientes, reportes básicos y clasificación de correos.",
+      "La adopción exitosa combina formación breve, procesos claros y una cultura abierta a experimentar sin miedo a los errores tempranos."
+    ]
+  },
+  {
+    "id": "n-003",
+    "category": "Turismo",
+    "title": "Rutas sostenibles para descubrir destinos cercanos",
+    "summary": "Viajar con menor impacto impulsa economías locales y experiencias auténticas.",
+    "image": "https://images.unsplash.com/photo-1596428746895-ff5f04c8ec4a?auto=format&fit=crop&w=1200&q=70",
+    "date": "2026-09-08",
+    "lead": "El turismo cercano está en auge: menos horas de traslado, más contacto con las comunidades y una huella ambiental más contenida.",
+    "body": [
+      "Muchos viajeros priorizan hospedajes de propietarios locales, transporte compartido y recorridos guiados por habitantes del lugar.",
+      "La sostenibilidad no se limita al entorno natural: también implica pagar precios justos, respetar tradiciones y volver a casa con historias, no con excesos."
+    ]
+  },
+  {
+    "id": "n-004",
+    "category": "Comercio",
+    "title": "Mercados locales se conectan con nuevos compradores",
+    "summary": "Emprendedores adoptan vitrinas digitales sin perder la cercanía de sus comunidades.",
+    "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1200&q=70",
+    "date": "2026-09-05",
+    "lead": "Plazas de mercado y tiendas de barrio se abren a canales digitales que amplían su alcance manteniendo el trato directo con el cliente.",
+    "body": [
+      "Catálogos en línea, pedidos por mensajería y pagos electrónicos permiten crecer sin sacrificar la personalidad del negocio.",
+      "El reto es sostener la calidad del producto y la promesa de servicio a medida que llegan más pedidos desde nuevos vecindarios."
+    ]
+  },
+  {
+    "id": "n-005",
+    "category": "Educación",
+    "title": "Bibliotecas comunitarias reinventan la lectura pública",
+    "summary": "Nuevos espacios integran clubes de lectura, talleres y recursos digitales gratuitos.",
+    "image": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=70",
+    "date": "2026-09-02",
+    "lead": "Las bibliotecas dejaron de ser solo salas silenciosas: hoy son puntos de encuentro donde convergen lectura, cultura y aprendizaje.",
+    "body": [
+      "Programaciones semanales acercan a niños, jóvenes y adultos mayores a la lectura crítica y a la producción de contenido propio.",
+      "El acceso a computadores, wifi y clubes temáticos permite ampliar oportunidades sin renunciar al placer de un libro impreso."
+    ]
+  },
+  {
+    "id": "n-006",
+    "category": "Tecnología",
+    "title": "Ciberseguridad: hábitos simples que evitan grandes pérdidas",
+    "summary": "Contraseñas robustas, doble factor y respaldos periódicos siguen siendo la mejor defensa.",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=70",
+    "date": "2026-08-30",
+    "lead": "La mayoría de incidentes digitales se previenen con prácticas básicas y consistentes en el día a día, tanto en casa como en el trabajo.",
+    "body": [
+      "El factor humano sigue siendo el eslabón más frágil: un correo bien redactado puede engañar a cualquiera que esté distraído.",
+      "Activar autenticación en dos pasos, actualizar el sistema operativo y respaldar la información son los tres pasos que más impacto tienen."
+    ]
+  }
+]
