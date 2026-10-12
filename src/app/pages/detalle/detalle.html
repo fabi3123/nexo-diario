@@ -1,0 +1,35 @@
+@if (noticia(); as n) {
+  <article class="detail">
+    <div class="detail-meta">{{ n.category }} · {{ n.date | fechaLarga }}</div>
+    <h1>{{ n.title }}</h1>
+    <p class="detail-lead">{{ n.lead || n.summary }}</p>
+    <div class="detail-media">
+      <img [src]="n.image" [alt]="n.title" />
+    </div>
+    <div class="detail-actions">
+      <button
+        type="button"
+        class="btn btn-primary"
+        [attr.aria-pressed]="esFavorito()"
+        (click)="alternarFavorito()"
+      >
+        {{ esFavorito() ? 'Quitar de favoritos' : 'Agregar a favoritos' }}
+      </button>
+      <a class="btn btn-outline" routerLink="/contacto">Ir a contacto</a>
+    </div>
+    <div class="detail-body">
+      @for (parrafo of n.body; track $index) {
+        <p>{{ parrafo }}</p>
+      }
+    </div>
+  </article>
+} @else if (cargando()) {
+  <p class="section-sub">Cargando noticia…</p>
+} @else {
+  <app-estado-vacio
+    titulo="Noticia no encontrada"
+    mensaje="La dirección puede estar mal escrita o la noticia se eliminó."
+  >
+    <a class="btn btn-primary" routerLink="/noticias">Ver todas las noticias</a>
+  </app-estado-vacio>
+}

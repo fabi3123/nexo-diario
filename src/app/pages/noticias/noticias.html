@@ -1,0 +1,26 @@
+<div class="section-head">
+  <div>
+    <h1 class="section-title">Todas las noticias</h1>
+    <p class="section-sub">Explora ideas, avances y destinos que mueven nuestra región.</p>
+  </div>
+</div>
+
+<app-filtro-categorias [categorias]="categorias" [(seleccionada)]="categoriaActual" />
+
+<div class="cards-grid">
+  @if (cargando()) {
+    <p class="section-sub">Cargando noticias…</p>
+  } @else if (error()) {
+    <app-estado-vacio style="grid-column: 1 / -1" titulo="Algo salió mal" [mensaje]="error()!" />
+  } @else {
+    @for (noticia of filtradas(); track noticia.id) {
+      <app-noticia-card [noticia]="noticia" />
+    } @empty {
+      <app-estado-vacio
+        style="grid-column: 1 / -1"
+        titulo="Sin resultados"
+        mensaje="No hay noticias en esta categoría todavía."
+      />
+    }
+  }
+</div>

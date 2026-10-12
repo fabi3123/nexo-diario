@@ -1,0 +1,14 @@
+<div class="chips" role="tablist" aria-label="Filtrar por categoría">
+  @for (categoria of categorias(); track categoria) {
+    <button
+      type="button"
+      class="chip"
+      role="tab"
+      [class.is-active]="categoria === seleccionada()"
+      [attr.aria-selected]="categoria === seleccionada()"
+      (click)="seleccionar(categoria)"
+    >
+      {{ categoria }}
+    </button>
+  }
+</div>
