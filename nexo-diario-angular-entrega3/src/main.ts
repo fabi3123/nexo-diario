@@ -49,7 +49,7 @@ const INITIAL_NEWS: News[] = [
     category: 'Turismo',
     title: 'Rutas sostenibles para descubrir destinos cercanos',
     summary: 'Viajar con menor impacto impulsa economías locales y experiencias auténticas.',
-    image: 'https://images.unsplash.com/photo-1596428746895-ff5f04c8ec4a?auto=format&fit=crop&w=1200&q=70',
+    image: 'assets/turismo.jpg',
     date: '2026-09-08',
     lead: 'El turismo cercano está en auge: menos horas de traslado, más contacto con las comunidades y una huella ambiental más contenida.',
     body: [
@@ -105,7 +105,12 @@ class NewsService {
 
   getNews(): News[] {
     const stored = this.read<News[]>(this.newsKey);
-    if (stored) {
+        if (stored) {
+      const turismo = stored.find(item => item.id === 'n-003');
+      if (turismo && turismo.image !== 'assets/turismo.jpg') {
+        turismo.image = 'assets/turismo.jpg';
+        this.write(this.newsKey, stored);
+      }
       return stored;
     }
     this.write(this.newsKey, INITIAL_NEWS);
@@ -187,7 +192,7 @@ class NewsCardComponent {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NewsCardComponent, RouterLink],
+  imports: [CommonModule, NewsCardComponent, RouterLink],
   template: `
     <section class="hero">
       <div>
